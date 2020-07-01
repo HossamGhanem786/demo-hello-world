@@ -1,3 +1,4 @@
 From openjdk:8
 EXPOSE 8081
-ADD target/
+ADD target/demo-hello-world.jar demo-hello-world.jar
+ENTRYPOINT ["java","-jar","/demo-hello-world.jar"]
